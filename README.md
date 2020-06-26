@@ -4,7 +4,7 @@
 
 <img src="https://i.pinimg.com/originals/f8/b6/5a/f8b65a79475ddaac8e9f4dcf2efa030f.gif"
 alt="toggle button icon"
-style="float: left; margin-right: 10px;" />
+style="float: left; height: 100px; width: 100px; margin-right: 10px;" />
 
 This button should:
 
