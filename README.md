@@ -2,6 +2,8 @@
 
 ### Challenge Scope
 
+This challenge will be occurring on June 27th, 9am - 2:30pm. If you're coming here after the fact, check out people's buttons at the bottom of this readme.
+
 <img src="https://i.pinimg.com/originals/f8/b6/5a/f8b65a79475ddaac8e9f4dcf2efa030f.gif"
 alt="toggle button icon"
 />
