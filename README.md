@@ -31,5 +31,6 @@ Create your own React app and button! **OR** fork + clone this repository to you
 
 We look forward to seeing what you come up with! If you're curious what folks came up with, see them below:
 
-**COMING SOON**
+Lucy Suddenly: https://github.com/In-It-Together/challenge_1_toggle_button/tree/lucy
+Shawn Huang Fernandes: https://github.com/In-It-Together/challenge_1_toggle_button/tree/shawn
 
