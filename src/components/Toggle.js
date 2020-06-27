@@ -1,18 +1,26 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { useState } from "react";
 
-class Toggle extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const Toggle = ({ collection, onClickEvent, buttonStyle }) => {
+  const [stateIndex, setStateIndex] = useState(0);
 
-  handleClick() {
-    // todo
-  }
+  const loopStates = nextIndex => {
+    if (nextIndex >= collection.length) {
+      return 0;
+    } else {
+      return nextIndex;
+    }
+  };
 
-  render() {
-    return <button>ON</button>;
-  }
-}
+  const buttonAction = () => {
+    onClickEvent(); // additional functionality
+    setStateIndex(loopStates(stateIndex + 1));
+  };
 
-ReactDOM.render(<Toggle />, document.getElementById("root"));
+  return (
+    <button className={buttonStyle} onClick={() => buttonAction()}>
+      <img src={collection[stateIndex]} alt="toggle-button" />
+    </button>
+  );
+};
+
+export default Toggle;
