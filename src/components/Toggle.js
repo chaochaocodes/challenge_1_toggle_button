@@ -1,18 +1,15 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
-class Toggle extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const Toggle = props => {
 
-  handleClick() {
+
+  const handleClick = () => {
     // todo
   }
 
-  render() {
-    return <button>ON</button>;
-  }
+
+  return <button>ON</button>;
+
 }
 
-ReactDOM.render(<Toggle />, document.getElementById("root"));
+export default Toggle
