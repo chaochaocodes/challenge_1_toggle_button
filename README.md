@@ -33,4 +33,4 @@ We look forward to seeing what you come up with! If you're curious what folks ca
 
 - Lucy Suddenly: https://github.com/In-It-Together/challenge_1_toggle_button/tree/lucy
 - Shawn Huang Fernandes: https://github.com/In-It-Together/challenge_1_toggle_button/tree/shawn
-
+- Joe Avila: https://github.com/In-It-Together/challenge_1_toggle_button/tree/joe
