@@ -1,26 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 
-const Toggle = ({ collection, onClickEvent, buttonStyle }) => {
-  const [stateIndex, setStateIndex] = useState(0);
-
-  const loopStates = nextIndex => {
-    if (nextIndex >= collection.length) {
-      return 0;
-    } else {
-      return nextIndex;
-    }
-  };
-
-  const buttonAction = () => {
-    onClickEvent(); // additional functionality
-    setStateIndex(loopStates(stateIndex + 1));
-  };
-
+function Toggle(props) {
   return (
-    <button className={buttonStyle} onClick={() => buttonAction()}>
-      <img src={collection[stateIndex]} alt="toggle-button" />
-    </button>
+    <>
+    {
+      <button
+        tab-index="0" 
+        onClick={(event) => props.handleClick(event)}
+        >
+          Click Me!
+      </button>
+    }
+    </>
   );
-};
+
+}
 
 export default Toggle;
