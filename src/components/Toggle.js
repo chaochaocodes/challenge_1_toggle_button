@@ -1,26 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
 
-const Toggle = ({ collection, onClickEvent, buttonStyle }) => {
-  const [stateIndex, setStateIndex] = useState(0);
-
-  const loopStates = nextIndex => {
-    if (nextIndex >= collection.length) {
-      return 0;
-    } else {
-      return nextIndex;
-    }
+class Toggle extends React.Component {
+  state = {
+    toggleOn: true,
+    color: '#000'
   };
 
-  const buttonAction = () => {
-    onClickEvent(); // additional functionality
-    setStateIndex(loopStates(stateIndex + 1));
-  };
+  handleClick = () => {
+    this.setState({
+      toggleOn: !this.state.toggleOn,
+      color: '#FFF'
+    });
+    // console.log(this.state.toggleOn)
+  }
 
-  return (
-    <button className={buttonStyle} onClick={() => buttonAction()}>
-      <img src={collection[stateIndex]} alt="toggle-button" />
-    </button>
-  );
-};
+  render() {
+    return (
+      <div className='Toggle'>
+      <button onClick={this.handleClick}>
+        {this.state.toggleOn ? 'ON' : 'OFF'}
+      </button>
+      </div>
+    )}
+}
 
+// ReactDOM.render(<Toggle />, document.getElementById("root"));
 export default Toggle;

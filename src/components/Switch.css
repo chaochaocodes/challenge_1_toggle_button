@@ -1,0 +1,86 @@
+button {
+    all: unset;
+    cursor: pointer;
+    display: flex; /* all items arranged horizontally */
+    flex-direction: row; /* x-axis */
+    justify-content: start; 
+    align-items: center; 
+    border-radius: 100px;
+    border: 1px solid black; 
+    width: 300px;
+    height: 150px;
+    position: relative;
+  } 
+  
+  button > img {
+      position: absolute;
+      height: 120%;
+      width: auto;
+      bottom: -18%;
+      left: 3%;
+  }
+  
+  .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+  }
+  .buttonOn > img {
+      animation: pikaSlideR 1s;
+      animation-fill-mode: forwards; 
+  }
+  
+  
+  .buttonOff > img {
+      animation: pikaSlideL 1s;
+      animation-fill-mode: forwards; 
+  }
+  
+  .buttonOn {
+    animation: example 1s;
+    animation-fill-mode: forwards; /* prevent reset */
+    justify-self: end;
+  }
+  
+  .buttonOff {
+    animation: exampleOff 1s;
+    animation-fill-mode: forwards;
+    justify-self: start
+  }
+  
+  @keyframes pikaSlideR {
+      from {
+          left: 3%;
+      }
+      to {
+          left: 53%;
+      }
+  }
+  
+  @keyframes pikaSlideL {
+      from {
+          left: 53%; 
+      }
+      to {
+          left: 3%;
+      }
+  }
+  
+  @keyframes example {
+    from {
+       background-color: red;
+    } 
+    to {
+        background-color: yellow;
+    }
+  }
+  
+    @keyframes exampleOff {
+      from {
+          background-color: yellow;
+      } 
+      to {
+          background-color: red;
+      }
+    }
