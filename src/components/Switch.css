@@ -14,10 +14,10 @@ button {
   
   button > img {
       position: absolute;
-      height: 120%;
+      height: 90%;
       width: auto;
-      bottom: -18%;
-      left: 3%;
+      /* bottom: 5%;
+      left: 0%; */
   }
   
   .center {
@@ -51,19 +51,19 @@ button {
   
   @keyframes pikaSlideR {
       from {
-          left: 3%;
+          left: 2.5%;
       }
       to {
-          left: 53%;
+          left: 52.5%;
       }
   }
   
   @keyframes pikaSlideL {
       from {
-          left: 53%; 
+          left: 52.5%; 
       }
       to {
-          left: 3%;
+          left: 2.5%;
       }
   }
   

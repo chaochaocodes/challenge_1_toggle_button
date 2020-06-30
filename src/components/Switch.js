@@ -1,6 +1,6 @@
 import React from 'react';
 import './Switch.css';
-import pikachu from '../media/pikachubutton_original.png';
+import pikachu from '../media/pikacircle.png';
 // import {keyframes} from 'styled-components'
 
 const Switch = ({ buttonOn, handleToggle}) => {
